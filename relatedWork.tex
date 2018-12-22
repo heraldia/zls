@@ -1,24 +1,37 @@
 \section{Related Works}
 \label{sec:rw}
 
-Compare Amazon Go and Sam's club Now, Amazon Go stores utilize a combination of sensors on the shelves, cameras and computer vision with machine learning.Different from Amazon Go, Sam's Club Now pay more attention on camera layout to plan shopping routes, and it use RFID\cite{1192765}.In our experiment, we get their merits, we set camera layout first, then use computer vision and sensors to identity items category and quantity.
+Amazon Go and Sam's Club Now are two popular retailers in unmanned supermarket.
+Amazon Go stores use a combination of sensors on the shelves, cameras and computer vision with machine learning.
+Different from Amazon Go, Sam's Club  pays more attention to camera layout aiming to plan shopping routes, and it use RFID\cite{1192765}.
+In our experiment, we learnt from both retailers, and we set camera layout first, then use computer vision and sensors to identity the category and quantity of the items.
 
 \subsection{Camera layout}
 
+In order to lower the overall cost of the sellers and economize resources, we aim to use the less cameras to cover whole scene while  the clearest image can be obtained.
+We compare the camera layout of various supermarkets and chose one of the best-functioned layouts of cameras for our experiment
+
+
 \subsection{Computer vision}
-Two of the most popular computer vision are YOLO and Faster-RCNN. The both have strong recognition ability. Faster-RCNN is a technology for using CNN to research feature map, and use RPN network to do full join operation for this, then send it to box regression layer and taxonomy\cite{NIPS2015_5638}. YOLO input S×S grid, and every gird is responsible for the objects falling into it, then it can choose the maximal IOU of bounding box\cite{yolov3}. We choose YOLOv3 for our experiment, because in processing medium-scale and small-scale da
+Two popular computer visions are YOLO and Faster-RCNN\cite{NIPS2015_5638}\cite{yolov3}.
+Both of them have strong recognition ability. Faster-RCNN is a technology for using CNN to research feature map, and RPN network will complete the full operation of the map before send it to box regression layer and taxonomy\cite{NIPS2015_5638}.
+YOLO input S×S grid, and every gird is responsible for the objects falling into it, then it can choose the maximal IOU of bounding box\cite{yolov3}.
+YOLOv3 is chosen in our experiment since in processing medium-scale and small-scale supermarkets.
 
 \subsection{Weight sensor}
-
+Amazon Go use the weight sensors as an assistant to determine the number of items on the shelves.
 
 \section{ Technical comparison }
 
 \subsection{official tones}
 
+Amazon Go officials stressed that they could use computer vision, sensor fusion, and deep learning to make people’s shopping more convenient.
+The store concept is considered as a revolutionary model which relies on the prevalence of smartphones and geofencing technology to streamline the customer experience, as well as supply chain and inventory management\cite{GREWAL20171} .
+
+
 \subsection{end-user comments}
-https://play.google.com/store/apps/details?id=com.amazon.ihm.richard&showAllReviews=true
-https://play.google.com/store/apps/details?id=com.samsclub.sng
-https://play.google.com/store/apps/details?id=com.samsclub.now
+
+According to some end-user comments, the existence of trans-era science and technology changes our consumption pattern. However, some people think it  makes shopping a hassle since Amazon Go omitted the need for closing account by human, and it is hard for the aged to use smartphone.
 
 ESL: electronic shelf label
 small fontsize for elderly people
@@ -30,6 +43,3 @@ younger adults, students
 no line, quick, smartphone 
 
 proofread
-
-
-
