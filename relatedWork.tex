@@ -9,14 +9,16 @@ In our experiment, we learnt from both retailers, and we set camera layout first
 \subsection{Camera layout}
 
 In order to lower the overall cost of the sellers and economize resources, we aim to use the less cameras to cover whole scene while  the clearest image can be obtained.
-We compare the camera layout of various supermarkets and chose one of the best-functioned layouts of cameras for our experiment
-
+We compare the camera layout of various supermarkets and chose one of the best-functioned layouts of cameras for our experiment, which use multi cameras and each camera is responsible for a specific area.
+We can get all the information in this area，and image obtained for each region are processed separately\cite{}.
+We try to adjust the Field of View (FOV) aiming to ensure both, camera coverage maximizing and image clarity\cite{ERDEM2006156}.
 
 \subsection{Computer vision}
 Two popular computer visions are YOLO and Faster-RCNN\cite{NIPS2015_5638}\cite{yolov3}.
 Both of them have strong recognition ability. Faster-RCNN is a technology for using CNN to research feature map, and RPN network will complete the full operation of the map before send it to box regression layer and taxonomy\cite{NIPS2015_5638}.
 YOLO input S×S grid, and every gird is responsible for the objects falling into it, then it can choose the maximal IOU of bounding box\cite{yolov3}.
-YOLOv3 is chosen in our experiment since in processing medium-scale and small-scale supermarkets.
+YOLOv3 is chosen in our experiment since in processing medium-scale and small-scale supermarkets, it is based on Open Source Computer Vision Library(OpenCV) and Compute Unified Device Architecture(CUDA).
+OpenCv is used to images processing, and CUDA is used to call GPU to accelerated operation.
 
 \subsection{Weight sensor}
 Amazon Go use the weight sensors as an assistant to determine the number of items on the shelves.
