@@ -49,8 +49,11 @@ When mounted at a height of 3.5 m (11.48 ft) the 180° version of the camera has
 \caption{Page Size and Optical Resolution}
 \label{fig}
 \end{figure}
+The camera provides the full resolution circular image for recording even if we are viewing only a portion of the scene.
 
 \subsection{Identity items}
+
+A single GTX 1060 GPU has 6GB of memory, it is enough for us to train examples, therefore we spread the net across GPU. We can use the Python Reptile to get image from Internet, then use visual GUI-software for marking bounded boxes of objects and generating annotation files. It will create .txt-file for each .jpg-image-file in the same directory and with the same name, but with .txt-extension, and put to file: object number and object coordinates on this image, for each object in new line: object-class, x, y, width, height.
 
 \subsection{Item Recognition}
 
