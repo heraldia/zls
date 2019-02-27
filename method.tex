@@ -1,10 +1,19 @@
 \section{Method}
 
-We did a series of experiments to achieve "cashier-free supermarket".
-Include make scene to simulate a real supermarket and use multi cameras to cover whole scene to get  images which used to identity items types and number on shelves.
+Now that the cashier-free supermarket has become a trend in the future development, and more and more businesses will join the ranks in the futures.
+So in order to conform to the trend of development, we did a series of experiments to achieve "cashier-free supermarket", and we will try to apply it to reality.
+It include make scene to simulate a real supermarket and use multi cameras to cover whole scene to get images which used to identity items types and number on shelves.
+Then we combine them into a complete system.
+We made this model through Unity3D, which is a cross-platform game engine developed, then we can use it to build our scene.
+
 
 \subsection{Multi cameras and Build scene}
-We build the Multi cameras scene is based on field of view(FOV), the horizontal field of view(H-FOV) and vertical field of view(V-FOV)\cite{Ball88} determined the sharpness and size of the pictures what we get.
+
+We will use the identification in daily supermarkets in our life, so we investigated any small and medium-sized supermarkets, such as FamilyMart, JOETEN, 7-ELEVEN.
+We find that the general pattern of these supermarkets is used strip shelves and parallel emissions.
+And then we draw lessons from their pattern, we use the Unity3D to achieve the scene.
+We used multi cameras in our simulated scenario, and try to restore the real scene as much as possible.
+The Multi cameras scene is based on field of view(FOV), the horizontal field of view(H-FOV) and vertical field of view(V-FOV)\cite{Ball88} determined the sharpness and size of the pictures what we get.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=2.5cm,scale=0.4]{HFOV.jpg} \includegraphics[width=2.5cm,scale=0.4]{VFOV.jpg}}
@@ -22,6 +31,7 @@ Fixed focal length lens, it can get the angel field of view(AFOV), and we can ge
 \end{figure}
 
 We can follow the specifications of the scene (shelves size, the length and width of walking, and layout of the whole scene) to adjust FOV.
+
 
 \subsection{Cameras selected}
 
@@ -49,17 +59,22 @@ When mounted at a height of 3.5 m (11.48 ft) the 180° version of the camera has
 \caption{Page Size and Optical Resolution}
 \label{fig}
 \end{figure}
+
 The camera provides the full resolution circular image for recording even if we are viewing only a portion of the scene.
 Unity3D is a game engine, the engine can be used to create both three-dimensional and two-dimensional games as well as simulations for its many platforms.
 In our experiment, we use Unity3D to build a scene like a truth supermarket, and camera placement experiments are performed in this simulated scene.
 
-
 \subsection{Item Recognition}
+
+The main method current approaches to object recognition make essential use of machine learning methods and deep learning methods.
+To achieve the item recognition, we can collect larger datasets, learn more powerful models, and use better techniques for preventing overfitting.
+In order to achieve item recognition, we use the YOLOv3 method to train our datasets.
+YOLO means "You only look once, real time object detection explained", it is a new item recognition method, now it has developed to the 3rd generation, it has more accurate recognition rate and ability to process larger amounts of data.
+We will use the YOLOv3 to train image what we get, it is based on OpenCV3.40 and CUDA8.0.
 
 A single GTX 1060 GPU has 6GB of memory, it is enough for us to train examples, therefore we spread the net across GPU.
 We can use the Python Reptile to get image from Internet, then use visual GUI-software for marking bounded boxes of objects and generating annotation files.
 It will create .txt-file for each .jpg-image-file in the same directory and with the same name, but with .txt-extension, and put to file: object number and object coordinates on this image, for each object in new line: object-class, x, y, width, height.
 
-We will use the YOLOv3 to train image what we get, it is based on OpenCV3.40 and CUDA8.0.
-
 \subsection{sensor fusion}
+
