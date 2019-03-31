@@ -35,14 +35,14 @@ We can follow the specifications of the scene (shelves size, the length and widt
 
 \subsection{Cameras Selected}
 
-The terms "Dots Per Inch" (DPI) and "Pixels Per Inch" (PPI) are used interchangeably by many.
+The terms "Dots Per Inch" (DPI) and "Pixels Per Inch" (PPI) are used interchangeably by many. 
 [A 200 DPI print means that for each inch of that printed material, it takes about 200 dots to make the picture. ]
 
 In imaging, PPI (pixels per inch) refers to the input resolution of a photograph or image.
-For example, a 200 PPI technically stands for that 200 dots per inch display in a image.
+For example, a 200 PPI technically stands for that 200 dots per inch display in a image. 
 
-A pixel is [like] a square dot without gaps.
-Both of them can describe the quality of a picture, and some cameras save digital images in arbitrary values as 72 dpi.
+A pixel is [like] a square dot without gaps. 
+Both of them can describe the quality of a picture, and some cameras save digital images in arbitrary values as 72 dpi. 
 We can calculate the DPI or PPI for what we need page size in Fig.3.
 
 \begin{figure}[htbp]
@@ -89,7 +89,7 @@ It will create text-file for each jpeg-image-file in the same directory and with
 \subsection{Sensor Fusion}
 
 \begin{comment}
-https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/
+https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/ 
 \end{comment}
 
 \section{Camera Displacement}
@@ -98,13 +98,12 @@ camera type: resolution specifications.
 camera design
 case:
 walmart,cvs, 7-11
-item,
+item, 
 customer
 cashier [recommendation]
 auto-cashier
 footage
-\begin{comment}
+
 [camera, data collection] -> [scene] [character - control] -> [identity system] -> [Log] -> [analysis]
                                 |                                                               ^
                                 ----------------------------------------------------------------
-\end{comment}

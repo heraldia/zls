@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: conference.aux
 The style file: IEEEtran.bst
 Database file #1: refer_output.bib
+Repeated entry---line 100 of file refer_output.bib
+ : @incollection{NIPS2015_5638
+ :                            ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "GREWAL20171"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
@@ -8,4 +12,4 @@ Warning--I didn't find a database entry for "GREWAL20171"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There were 2 warnings)
+(There was 1 error message)

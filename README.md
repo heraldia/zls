@@ -3,5 +3,5 @@ git clone
 git pull
 
 git add . 
-git commit -m "phil 1st reversion"
+git commit -m "phil"
 git push origin master
